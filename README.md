@@ -10,7 +10,7 @@ The PDFs in question are:
 - [2015 Data Report on Childhood Lead Testing and Elevated Blood Lead Levels: Michigan](http://www.michigan.gov/documents/lead/2015_annual_report_2_7_17_551735_7.pdf)
 - [2016 Provisional Data Report on Childhood Lead Testing and Elevated Levels: Michigan](http://www.michigan.gov/documents/lead/MI-CLPPP_2016_Provisional_Report_603438_7.pdf)
 
-Each table from these files was extracted into a single CSV file. The file naming convention is as follows: 
+Each individual table from a PDF was extracted into a single CSV file. The file naming convention is as follows: 
 ```BLL_[age group of children]_[geographic area]_[year]```
 
 For example, `BLL_under6_zip_2016` is the data on children under six, by zip code, in 2016. 
