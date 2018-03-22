@@ -1,0 +1,27 @@
+Variable name,"Meaning (as we interpret, from the pdf)",Common?
+total_n,The total number of children tested,
+county,County name,
+zip,Zip code,
+community,Name of municipality or community,
+percent_pre1950_housing,Percent pre-1950 housing,
+percent_pre1978_housing,Percent pre-1978 housing,
+population,Population of county or zip (may mean the population of children in that age group? Number varies within one document),*
+total_n,"Children tested, total number (N)",*
+total_percent,"Children tested, percent",*
+all_less5_total,"All blood samples, <5ug/dL, total numer (N)",
+all_5to9_total,"All blood camples, 5-9 ug/dL, total number (N)",
+all_greater5_total,"All blood samples, >5 ug/dL, total number (N)",*
+all_greater5_percent,"All blood samples, >5 ug/dL, percent",*
+all_greater10_total,"All blood samples, >=10 ug/dL, total number (N)",
+all_greater_10_percent,"All blood samples, >=10 ug/dL, percent",
+capillary_greater5_total,"Capilary samples, >=5 ug/dL, total number (N)",
+capillary_greater5_percent,"Capilary samples, >=5 ug/dL, percent",
+capilary_greater10_total,"Capilary samples, >=10 ug/dL, total number (N)",
+venous_greater5_total,"Venous samples, >= 5 ug/dL, total number (N)",
+venous_greater5_percent,"Venous samples, >= 5 ug/dL, percent",
+venous_10to19_total,"Venous samples, 10-19 ug/dL, total number (N)",
+venous_5to14_total,"Venous samples, 5-14 ug/dL, total number (N)",
+venuous_greater15_total,"Venous samples, > 15 ug/dL, total number (N)",
+venuous_greater15_percent,"Venous samples, > 15 ug/dL, percent",
+venous_20to44_total,"Venous samples, 20-44 ug/dL, total number (N)",
+venous_greater45_total,"Venous samples, >=45 ug/dL, total number (N)",
