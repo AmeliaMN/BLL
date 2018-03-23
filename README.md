@@ -30,3 +30,5 @@ Common geographic areas are
 We are also attempting to standardize the variable names, although it appears that slightly different measurements and cutoffs were used across years. The [Data Dictionary](BLL_datadictionary.csv) will evolve as we work through the tables. 
 
 
+In the beta, we might want more text here. 
+
