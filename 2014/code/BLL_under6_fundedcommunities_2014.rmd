@@ -1,0 +1,22 @@
+---
+title: "BLL"
+author: "Emma Livingston"
+date: "March 29, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r}
+BLL_under6_fundedcommunities_2014 <- read_csv("Smith Sophomore Year/Data Journalism/BLL/BLL_under6_fundedcommunities_2014.csv")
+
+BLL_under6_fundedcommunities_2014 <- BLL_under6_fundedcommunities_2014 %>%
+  mutate(capillary_greater5_total = str_replace_all(capillary_greater5_total, ",", ""))
+
+write_csv(BLL_under6_fundedcommunities_2014, "Smith Sophomore Year/Data Journalism/BLL/cleaned_BLL_under6_fundedcommunities_2014.csv")
+
+```
+
