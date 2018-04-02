@@ -1,0 +1,32 @@
+---
+title: "Cleaning BLL_under6_county_2016.csv"
+author: "Maggie Wang"
+date: "April 2, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+```
+
+```{r}
+path <- "C:\\Users\\xiaon_000\\Documents\\GitHub\\BLL\\2016\\BLL_under6_county_2016.csv"
+```
+
+```{r}
+cols <- c("county", "total_n", "all_greater5_total", "all_greater5_percent",
+          "capillary_greater5_total", "capillary_greater5_percent", 
+          "venous_greater5_total", "venous_greater5_percent", "venous_5to14_total",
+          "venous_greater15_total", "venous_greater15_percent")
+```
+
+
+```{r}
+bll_2016 <- read_csv(path, col_names = cols, skip = 1)
+```
+
+```{r}
+write.csv(bll_2016, file = "C:\\Users\\xiaon_000\\Documents\\GitHub\\BLL\\2016\\BLL_under6_county_2016.csv")
+```
+
