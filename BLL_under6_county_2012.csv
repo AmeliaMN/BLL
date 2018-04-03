@@ -1,3 +1,4 @@
+county,percent_pre1950_housing,percent_pre1978_housing,children_under_age6,total_n,total_percent,all_less5_total,all_5to9_total,capilary_10to14_total,venous_10to14_total,capilary_15to19_total,venous_10to15_total,capilary_20to44_total,venous_20to44_total,capilary_greater45_total,venous_greater45_total,all_greater5_total,all_greater10_total,all_greater5_percent,all_greater10_total
 Alcona,12.4,61.5,397,47,11.8,45,2,0,0,0,0,0,0,0,0,2,0,4.3,0
 Alger,29.5,64.1,464,86,18.5,85,1,0,0,0,0,0,0,0,0,1,0,1.2,0
 Allegan,23.2,51.1,9073,1172,12.9,1131,34,4,3,0,0,0,0,0,0,41,3,3.5,0.3
@@ -82,4 +83,4 @@ Washtenaw,17.2,56.5,23105,2747,11.9,2677,67,0,2,0,0,0,1,0,0,70,3,2.5,0.1
 Wayne ex Det,22.6,74.5,78340,19075,24.3,18471,513,26,33,3,15,3,9,0,1,603,58,3.2,0.3
 Wexford,23,53.7,2690,346,12.9,339,5,2,0,0,0,0,0,0,0,7,0,2,0
 "Detroit, City of",62.2,93.2,62377,27298,43.8,24969,1832,50,259,11,85,6,80,0,4,2327,428,8.5,1.6
-MICHIGAN,24.7,64.8,718389,149046,20.7,142258,5734,195,471,35,162,20,146,0,9,6772,788,4.5,0.5
+MICHIGAN,24.7,64.8,718389,149046,20.7,142258,5734,195,471,35,162,20,146,0,9,6772,788,4.5,0.5
