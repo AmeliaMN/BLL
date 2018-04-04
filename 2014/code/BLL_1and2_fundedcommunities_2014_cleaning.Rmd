@@ -1,0 +1,25 @@
+---
+title: "BLL_datacleaning"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyr)
+```
+```{r}
+BLL_1and2_fundedcommunities_2014 <- 
+  read_csv("~/BLL_1and2_fundedcommunities_2014.csv", col_names = FALSE)
+```
+```{r}
+BLL_1and2_fundedcommunities_2014 <- BLL_1and2_fundedcommunities_2014 %>%
+  mutate(X1=str_replace_all(X1, ",", ""), X2=str_replace_all(X2, ",", ""), X3=str_replace_all(X3, ",", ""), X4=str_replace_all(X4, ",", ""), X5=str_replace_all(X5, ",", ""), X6=str_replace_all(X6, ",", ""), X7=str_replace_all(X7, ",", ""), X8=str_replace_all(X8, ",", ""), X9=str_replace_all(X9, ",", ""), X10=str_replace_all(X10, ",", ""), X11=str_replace_all(X11, ",", ""), X12=str_replace_all(X12, ",", ""), X13=str_replace_all(X13, ",", ""), X14=str_replace_all(X14, ",", ""))
+```
+
+```{r}
+write_csv(BLL_1and2_fundedcommunities_2014, "BLL_1and2_fundedcommunities_2014.csv")
+```
+
