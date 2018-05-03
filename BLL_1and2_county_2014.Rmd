@@ -1,0 +1,19 @@
+---
+title: "BLL_1and2_county_2014"
+author: "Peyton Draper"
+date: "5/1/2018"
+output: html_document
+---
+
+```{r, echo = FALSE, message = FALSE}
+library(readr)
+library(dplyr)
+library(tidyr)
+
+BLL_1and2_county_2014 <- read_csv("~/Downloads/BLL_1and2_county_2014.csv", col_names = FALSE, na = c("", "NA", "---", "**"))
+
+BLL_1and2_county_2014 <- BLL_1and2_county_2014 %>%
+  rename(county=X1, percent_pre1950_housing=X2, percent_pre1978_housing=X3, children_1and2_age=X4, total_n=X5, total_percent=X6, all_less5_total=X7, capillary_greater5_total=X8, venous_5to14_total=X9, venous_greater15_total=X10, venous_greater5_total=X11, venous_greater5_percent=X12, capillary_and_venous_greater5=X13, capillary_and_venous_greater5percent=X14)
+
+BLL_1and2_county_2014
+```
