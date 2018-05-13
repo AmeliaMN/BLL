@@ -1,0 +1,130 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 1 to community",
+    "oldColumnName": "Column 1",
+    "newColumnName": "community"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to percent_pre1950_housing",
+    "oldColumnName": "Column 2",
+    "newColumnName": "percent_pre1950_housing"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to percent_pre1978_housing",
+    "oldColumnName": "Column 3",
+    "newColumnName": "percent_pre1978_housing"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to population",
+    "oldColumnName": "Column 4",
+    "newColumnName": "population"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to total_n",
+    "oldColumnName": "Column 5",
+    "newColumnName": "total_n"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to total_percent",
+    "oldColumnName": "Column 6",
+    "newColumnName": "total_percent"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to all_less5_total",
+    "oldColumnName": "Column 7",
+    "newColumnName": "all_less5_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to all_5to9_total",
+    "oldColumnName": "Column 8",
+    "newColumnName": "all_5to9_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to capilary_great10_total",
+    "oldColumnName": "Column 9",
+    "newColumnName": "capilary_great10_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column capilary_great10_total to capilary_greater10_total",
+    "oldColumnName": "capilary_great10_total",
+    "newColumnName": "capilary_greater10_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to venous_10to19_total",
+    "oldColumnName": "Column 10",
+    "newColumnName": "venous_10to19_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to venous_20to44_total",
+    "oldColumnName": "Column 11",
+    "newColumnName": "venous_20to44_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to venous_greater45_total",
+    "oldColumnName": "Column 12",
+    "newColumnName": "venous_greater45_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 13 to all_greater5_total",
+    "oldColumnName": "Column 13",
+    "newColumnName": "all_greater5_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 14 to all_greater10_total",
+    "oldColumnName": "Column 14",
+    "newColumnName": "all_greater10_total"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 15 to all_greater5_percent",
+    "oldColumnName": "Column 15",
+    "newColumnName": "all_greater5_percent"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 16 to all_greater_10_percent",
+    "oldColumnName": "Column 16",
+    "newColumnName": "all_greater_10_percent"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column population using expression grel:replaceChars(value, \",\", \"\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "population",
+    "expression": "grel:replaceChars(value, \",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column total_n using expression grel:replaceChars(value, \",\", \"\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "total_n",
+    "expression": "grel:replaceChars(value, \",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
