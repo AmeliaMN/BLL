@@ -1,0 +1,15 @@
+---
+title: "BLL_under6_county_2014_editingr"
+author: "Sophia Tannir"
+date: "March 29, 2018"
+output: html_document
+---
+```{r}
+library(tidyverse)
+
+variables_edited <- read_csv("Downloads/variables_edited.csv", na = c("", "NA", "---"))
+
+write_csv(variables_edited, "BLL_under6_county_2014.csv")
+
+```
+

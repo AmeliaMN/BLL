@@ -1,0 +1,33 @@
+---
+title: "BLL_under6_county_2013_R"
+author: "Erika Chao"
+date: "March 29, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(readr)
+```
+
+```{r}
+BLL_under6_county_2013 <- read_csv("~/BLL/2013/BLL_under6_county_2013.csv", 
+     col_names = FALSE)
+```
+
+```{r}
+BLL_under6_county_2013 <- BLL_under6_county_2013 %>%
+  rename(county = X1, percent_pre1950_housing = X2, percent_pre1978_housing = X3,
+         children_under_age6 = X4, total_n = X5, total_percent = X6, 
+         capillary_or_venous_less5 = X7, capillary_or_venous_5to9 = X8, capilary_greater10_total = X9,
+         venous_10to19_total = X10, venous_20to44_total = X11, venous_greater45_total = X12, 
+         all_greater5_total = X13, all_greater10_total = X14, all_greater5_percent = X15,
+         all_greater_10_percent = X16)
+```
+
+
+```{r}
+write_csv(BLL_under6_county_2013, "~/BLL/2013/BLL_under6_county_2013.csv")
+```
+
