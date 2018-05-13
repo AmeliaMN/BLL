@@ -1,0 +1,28 @@
+---
+title: "Cleaning BLL data"
+author: "Riley Boeth"
+date: "3/29/2018"
+output: html_document
+---
+
+```{r}
+library(plyr)
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(readr)
+```
+
+```{r}
+data<-read_csv("/Users/rileyboeth/Library/Mobile Documents/com~apple~CloudDocs/Spring 2018 Courses/Data Journalism/BLL_under6_zip_2015.csv")
+
+colnames(data)[3]<-"children_tested_n"
+
+data<-data%>%
+  mutate(Pop_under_age_six = ifelse(Pop_under_age_six %in% c("**","--","*"), NA, Pop_under_age_six),
+         children_tested_n = ifelse(children_tested_n %in% c("**","--","*"), NA, children_tested_n),
+         Children_tested_percent = ifelse(Children_tested_percent %in% c("**","--","*"), NA, Children_tested_percent),
+         any_samples_n = ifelse(any_samples_n %in% c("**","--","*"), NA, any_samples_n),
+         any_samples_percent = ifelse(any_samples_percent %in% c("**","--","*"), NA, any_samples_percent))
+```
+
