@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 ##OpenRefine code to rename variables and remove columns\
+\
+\
+[\
+  \{\
+    "op": "core/text-transform",\
+    "description": "Text transform on cells in column all_greater5_total using expression grel:replaceChars(value, \\",\\", \\"\\")",\
+    "engineConfig": \{\
+      "mode": "row-based",\
+      "facets": []\
+    \},\
+    "columnName": "all_greater5_total",\
+    "expression": "grel:replaceChars(value, \\",\\", \\"\\")",\
+    "onError": "keep-original",\
+    "repeat": false,\
+    "repeatCount": 10\
+  \},\
+  \{\
+    "op": "core/text-transform",\
+    "description": "Text transform on cells in column venous_greater5_total using expression grel:replaceChars(value, \\",\\", \\"\\")",\
+    "engineConfig": \{\
+      "mode": "row-based",\
+      "facets": []\
+    \},\
+    "columnName": "venous_greater5_total",\
+    "expression": "grel:replaceChars(value, \\",\\", \\"\\")",\
+    "onError": "keep-original",\
+    "repeat": false,\
+    "repeatCount": 10\
+  \},\
+  \{\
+    "op": "core/text-transform",\
+    "description": "Text transform on cells in column venous_5to14_total using expression grel:replaceChars(value, \\",\\", \\"\\")",\
+    "engineConfig": \{\
+      "mode": "row-based",\
+      "facets": []\
+    \},\
+    "columnName": "venous_5to14_total",\
+    "expression": "grel:replaceChars(value, \\",\\", \\"\\")",\
+    "onError": "keep-original",\
+    "repeat": false,\
+    "repeatCount": 10\
+  \},\
+  \{\
+    "op": "core/text-transform",\
+    "description": "Text transform on cells in column capillary_greater5_total using expression grel:replaceChars(value, \\",\\", \\"\\")",\
+    "engineConfig": \{\
+      "mode": "row-based",\
+      "facets": []\
+    \},\
+    "columnName": "capillary_greater5_total",\
+    "expression": "grel:replaceChars(value, \\",\\", \\"\\")",\
+    "onError": "keep-original",\
+    "repeat": false,\
+    "repeatCount": 10\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 1 to county",\
+    "oldColumnName": "Column 1",\
+    "newColumnName": "county"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 2 to percent_pre1950_housing",\
+    "oldColumnName": "Column 2",\
+    "newColumnName": "percent_pre1950_housing"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 3 to percent_pre1978_housing",\
+    "oldColumnName": "Column 3",\
+    "newColumnName": "percent_pre1978_housing"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 4 to children_under6",\
+    "oldColumnName": "Column 4",\
+    "newColumnName": "children_under6"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column children_under6 to children_under_age6",\
+    "oldColumnName": "children_under6",\
+    "newColumnName": "children_under_age6"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 5 to total_n",\
+    "oldColumnName": "Column 5",\
+    "newColumnName": "total_n"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 6 to total_percent",\
+    "oldColumnName": "Column 6",\
+    "newColumnName": "total_percent"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 7 to all_less5_total",\
+    "oldColumnName": "Column 7",\
+    "newColumnName": "all_less5_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 8 to capillary_greater5_total",\
+    "oldColumnName": "Column 8",\
+    "newColumnName": "capillary_greater5_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 9 to venous_5to14_total",\
+    "oldColumnName": "Column 9",\
+    "newColumnName": "venous_5to14_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 10 to venuous_greater15_total",\
+    "oldColumnName": "Column 10",\
+    "newColumnName": "venuous_greater15_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 11 to venous_greater5_total",\
+    "oldColumnName": "Column 11",\
+    "newColumnName": "venous_greater5_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 12 to venous_greater5_percent",\
+    "oldColumnName": "Column 12",\
+    "newColumnName": "venous_greater5_percent"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 13 to all_greater5_total",\
+    "oldColumnName": "Column 13",\
+    "newColumnName": "all_greater5_total"\
+  \},\
+  \{\
+    "op": "core/column-rename",\
+    "description": "Rename column Column 14 to all_greater5_percent",\
+    "oldColumnName": "Column 14",\
+    "newColumnName": "all_greater5_percent"\
+  \}\
+]}
